@@ -8,11 +8,18 @@ body{
 }
 
 nav {
-    line-height:1.5em;
+    background:rgb(56, 43, 33);
+    padding:5px;
+    line-height:1.6em;
+    text-shadow:0 2px 2px rgb(7, 5, 4);
 }
 
 nav h1, p {
     margin:0;
+}
+
+h1 {
+    font-size:24px;
 }
 
 em{
