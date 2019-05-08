@@ -1,0 +1,52 @@
+body{
+    font-family:sans-serif;
+    background:rgb(7, 5, 4);
+    color:rgb(255, 215, 83);
+    text-align:center;
+    width:100%;
+    margin:0 auto;
+}
+
+nav {
+    line-height:1.5em;
+}
+
+nav h1, p {
+    margin:0;
+}
+
+em{
+    opacity:.65;
+}
+
+input{
+    text-align:center;
+    border:none;
+    font-size:22px;
+    padding:15px;
+    background:rgb(56, 43, 33);
+    color:rgb(255, 215, 83);
+}
+
+input::placeholder {
+    color:rgb(255, 215, 83, .5);
+}
+
+button{
+    width:75%;
+    display:block;
+    margin:20px auto;
+    border:rgb(255, 215, 83) solid 4px;
+    color:rgb(255, 215, 83);
+    padding:15px;
+    font-size:22px;
+    background:inherit;
+
+    transition: width .25s, border-color .25s;
+}
+
+button:hover{
+    cursor:pointer;
+    border-color:rgb(255, 215, 83, .5);
+    width: 90%;
+}
