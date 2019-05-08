@@ -9,9 +9,18 @@ body{
 
 nav {
     background:rgb(56, 43, 33);
+    color:rgb(255, 245, 211);
     padding:5px;
     line-height:1.6em;
     text-shadow:0 2px 2px rgb(7, 5, 4);
+}
+
+.content {
+    background:rgb(7, 5, 4);
+    position:absolute;
+    transform:translate(-50%, -50%);
+    top:50%;
+    left:50%;
 }
 
 nav h1, p {
@@ -20,7 +29,7 @@ nav h1, p {
 
 h1 {
     font-size:24px;
-    margin:7px;
+    margin:12px auto 3px auto;
 }
 
 em{
