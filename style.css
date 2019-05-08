@@ -15,10 +15,6 @@ nav {
     text-shadow:0 2px 2px rgb(7, 5, 4);
 }
 
-.content {
-    background:rgb(7, 5, 4);
-}
-
 nav h1, p {
     margin:0;
 }
@@ -43,6 +39,11 @@ input{
 
 input::placeholder {
     color:rgb(255, 215, 83, .5);
+}
+
+input::-moz-placeholder {
+    color:rgb(255, 215, 83, .5);
+
 }
 
 button{
