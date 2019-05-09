@@ -47,7 +47,7 @@ input::-moz-placeholder {
 }
 
 button{
-    width:75%;
+    width:400px;
     display:block;
     margin:20px auto;
     border:rgb(255, 215, 83) solid 4px;
