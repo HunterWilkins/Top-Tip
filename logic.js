@@ -43,7 +43,7 @@ $(document).ready(function(){
             // A Simple If/Else statement for whether the user is splitting the bill ======
             // or not. Displays "...,split between X people." if it's larger than 1 =======
             if (people > 1){
-                $("#result").text("$" + result + ", split between " + people + " people.");
+                $("#result").text("Each person should pay $" + result);
             }
             
             else if (people.toLowerCase() === "no" || parseInt(people) === 1){
