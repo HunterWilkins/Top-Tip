@@ -34,17 +34,24 @@ $(document).ready(function(){
         let result = ((cost * tip) / people).toFixed(2);
         //===================================================================
     
-    
-        // A Simple If/Else statement for whether the user is splitting the bill ======
-        // or not. Displays "...,split between X people." if it's larger than 1 =======
-        if (people > 1){
-            $("#result").text("$" + result + ", split between " + people + " people.");
+        // Negative and Zero Input handling...==================================
+        if (cost < 1 || people < 1  || tip < 1){
+            $("#result").text("Your input must be a positive, nonzero number.");
         }
-        
-        else if (people.toLowerCase() === "no" || parseInt(people) === 1){
-            console.log("Running...");
-            $("#result").text("$" + result);
+        //======================================================================
+        else {
+            // A Simple If/Else statement for whether the user is splitting the bill ======
+            // or not. Displays "...,split between X people." if it's larger than 1 =======
+            if (people > 1){
+                $("#result").text("$" + result + ", split between " + people + " people.");
+            }
+            
+            else if (people.toLowerCase() === "no" || parseInt(people) === 1){
+                console.log("Running...");
+                $("#result").text("$" + result);
+            }
         }
-        //=============================================================================
+       
+        //==================================================================================
     });
 });
