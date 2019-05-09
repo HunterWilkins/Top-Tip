@@ -35,7 +35,7 @@ $(document).ready(function(){
         //===================================================================
     
         // Negative and Zero Input handling...==================================
-        if (cost < 1 || people < 1  || tip < 1){
+        if (cost < 0 || people < 0  || tip < 0 || tip === 0 || people === 0 || cost === 0){
             $("#result").text("Your input must be a positive, nonzero number.");
         }
         //======================================================================
