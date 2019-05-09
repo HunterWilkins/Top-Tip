@@ -62,5 +62,4 @@ button{
 button:hover{
     cursor:pointer;
     border-color:rgb(255, 215, 83, .5);
-    width: 90%;
 }
